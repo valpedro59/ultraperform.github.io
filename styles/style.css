@@ -1,0 +1,316 @@
+/******************************************************************
+  Website Name: Gym
+  Description:  Gym Fitness HTML Template
+  Author: Val Pedro
+  Author URI: https://valpedro.com
+  Version: 1.0
+  Created: Val Pedro
+******************************************************************/
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.  Website default CSS
+	1.1	Variables
+	1.2	Mixins
+	1.3	Flexbox
+	1.4	Reset
+2.  Helper Css
+3.  Header Section
+4.  Hero Section
+5.  Service Section
+6.  Class Section
+7.  Price Plan Section
+8.  Trainer Section
+9.  Contact
+10.  Footer Style
+
+-------------------------------------------------------------------*/
+/*----------------------------------------*/
+/* 1-- Website default CSS
+/*---------------------------------------*/
+/*Root color*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-dark-grey {
+  background-color: #151515;
+}
+
+body {
+  font-family: "Oswald";
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+  font-family: "Muli", sans-serif;
+  color: #d9d9d9;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 15px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+  color: green;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-start {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 17px 30px 16px;
+  color: #f1f1f1;
+  background: #008000;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+.btn-start:hover {
+  color: #008000;
+  background-color: #f1f1f1;
+}
+
+.section-padding {
+  padding: 100px 55px;
+}
+
+.section-title {
+  color: #f1f5f8;
+  text-align: center;
+  margin-bottom: 55px;
+}
+.section-title span {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #008000;
+}
+
+/* 1-- Header
+/*----------------------------------------*/
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 25px;
+  padding-top: 55px;
+  z-index: 99;
+  width: 100%;
+}
+header .navbar-brand {
+  margin-top: -30px;
+}
+header .navbar-brand img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header nav ul li a {
+  color: #f1f1f1 !important;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+header nav ul li a:hover {
+  color: #008000 !important;
+}
+header .socials a {
+  color: #f1f1f1;
+}
+header .socials a:hover {
+  color: #008000;
+}
+
+/*hero-section start*/
+.hero-section {
+  position: relative;
+  top: 0;
+  opacity: 1;
+}
+.hero-section .hs-item {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-section .hs-item .hi-text {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-section .hs-item .hi-text span {
+  color: #f1f1f1;
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin-bottom: 18px;
+}
+.hero-section .hs-item .hi-text h1 {
+  color: #f1f1f1;
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 90px;
+  margin-bottom: 42px;
+}
+
+/*hero-section end*/
+/*why-section start*/
+.choseus-section .section-title {
+  text-align: center;
+  margin-bottom: 55px;
+}
+.choseus-section .section-title span {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #008000;
+}
+.choseus-section .plan-wrapper {
+  display: flex;
+  gap: 16px;
+}
+.choseus-section .plan-wrapper .cs-item {
+  color: #f1f5f8 !important;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.choseus-section img {
+  width: 54px;
+  height: 54px;
+}
+
+/*why-section end*/
+/*training-section start*/
+.training .section-title {
+  text-align: center;
+  margin-bottom: 55px;
+}
+.training .section-title span {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #008000;
+}
+.training .ts-grid {
+  width: 100%;
+}
+.training .ts-grid .grid-item {
+  position: relative;
+  text-align: center;
+  color: #f1f1f1;
+  transition: all 0.3s;
+}
+.training .ts-grid .grid-item h4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.training .ts-grid .grid-item:hover h4 {
+  opacity: 1;
+}
+.training .ts-grid #muscle {
+  width: 100%;
+}
+.training .ts-grid #muscle img {
+  width: 100%;
+}
+.training .ts-grid #mincir {
+  width: 100%;
+}
+.training .ts-grid #mincir img {
+  width: 100%;
+}
+.training .ts-grid #seche {
+  width: 100%;
+}
+.training .ts-grid #seche img {
+  width: 100%;
+}
+.training .ts-grid #endurance {
+  width: 100%;
+}
+.training .ts-grid #endurance img {
+  width: 100%;
+}
+.training .ts-grid #deux {
+  width: 100%;
+}
+.training .ts-grid #deux img {
+  width: 100%;
+}
+
+/*training-section end*/
+@media screen and (max-width: 780px) {
+  header {
+    padding: 0;
+  }
+  nav {
+    background-color: #151515;
+  }
+}/*# sourceMappingURL=style.css.map */

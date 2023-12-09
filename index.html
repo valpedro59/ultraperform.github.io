@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- G font -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,regular,500,700" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header>
+        <!-- <div class="logo">
+            <a href="#">
+                <img src="/img/ultralogo.png" alt="">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#training">Entrainement</a></li>
+                <li class="nav-link"><a class="nav-link" href="#food">Nutrition</a></li>
+                <li class="nav-item"><a class="nav-link" href="#price">Tarif</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="socials">
+            <a href="#"><span><i class="fa-brands fa-facebook"></i></span></a>
+            <a href="#"><span><i class="fa-brands fa-instagram"></i></span></a>
+            <a href="#"><span><i class="fa-brands fa-twitter"></i></span></a>
+        </div> -->
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex" id="navbar">
+                    <a class="navbar-brand col-lg-3 me-0" href="#"><img src="/img/ultralogo.png" alt="logo"></a>
+                    <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#training">Entrainement</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nutrition">Nutrition</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tarifs">Tarifs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                        <a type="button" href="#contact" class="btn btn-success">Commencer</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- header end -->
+
+    <!-- hero section start -->
+    <section class="hero-section">
+        <div class="hs-carousel">
+            <div class="hs-item set-bg" data-setbg="img/hero-hero.jpg">
+                <div class="container">
+                    <div class="hi-text">
+                        <span>Facile à utiliser</span>
+                        <h1>Efficace. <strong class="text-success">Adapté à</strong> vos besoins.</h1>
+                        <a class="btn btn-success" href="#">Commencer dès maintenant</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero section start -->
+
+    <!-- ChoseUs Section Begin -->
+    <section class="choseus-section bg-dark section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Pourquoi nous faire confiance?</span>
+                        <h2>REPOUSSEZ VOS LIMITES</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="plan-wrapper">
+                <div class="row">
+
+                    <div class="col-12 col-lg-3">
+                        <div class="cs-item">
+                            <span class="plan-img"><img src="/img/plan/coach.png" alt=""></span>
+                            <h4>Coaching en ligne</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                dolore facilisis.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="cs-item">
+                            <span class="plan-img"><img src="/img/plan/salad.png" alt=""></span>
+                            <h4>Plan de nutrition saine</h4>
+                            <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                facilisis.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="cs-item">
+                            <span class="plan-img"><img src="/img/plan/lunges.png" alt=""></span>
+                            <h4>Plan d'entrainement professionnel</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                dolore facilisis.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="cs-item">
+                            <span class="plan-img"><img src="/img/plan/heart.png" alt=""></span>
+                            <h4>Unique a vos besoins</h4>
+                            <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                facilisis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ChoseUs Section End -->
+
+    <!-- Training Section Start -->
+    <section class="training bg-dark-grey section-padding" id="training">
+        <div class="container">
+            <div class="section-title">
+                <span>Entrainement</span>
+                <h2>Des séances d'entraînement conçues spécifiquement pour vous</h2>
+                <p>
+                    Votre Coach analyse votre forme physique et vos objectifs. Et, plus vous vous entraînez, plus il
+                            s'adapte à vous.
+                </p>
+                <a class="btn-start" href="#tarifs">Choisir votre parcours</a>
+            </div>
+            <div class="ts-grid">
+                <div class="row">
+                    <div class="col-12 col-lg-4 mb-3">
+                        <div class="grid-item" id="muscle">
+                            <img src="/img/traning/grossir.jpg" alt="">
+                            <h4>Prendre du Muscle</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3">
+                        <div class="grid-item" id="mincir">
+                            <img src="/img/traning/mincir.jpg" alt="">
+                            <h4>Perdre du gras</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3">
+                        <div class="grid-item" id="seche">
+                            <img src="/img/traning/seche.jpg" alt="">
+                            <h4>Avoir la masse seche</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 mb-3">
+                        <div class="grid-item" id="endurance">
+                            <img src="/img/traning/endurance.jpg" alt="">
+                            <h4>Travailler votre endurance</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 mb-3">
+                        <div class="grid-item" id="deux">
+                            <img src="/img/traning/deux.jpg" alt="">
+                            <h4>Seul ou Accompagne</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Traning Section End -->
+
+    <!-- Nutrition section Start -->
+    <section class="nutrition bg-dark section-padding" id="nutrition">
+        <div class="n-wrapper">
+            <div class="n-banner">
+                <div class="section-title">
+                    <span>Nutrition</span>
+                    <h2>Mangez sainement et atteignez vos objectifs</h2>
+                    <p>
+                        Un Coach Nutrition numérique de pointe. Des menus personnalisés. Des recettes gourmandes et de qualité.
+                    </p>
+                    <a class="btn-start" href="#tarif">Commencer a manger sainement</a>
+                </div>
+            </div>
+
+            <div class="n-gallery">
+                <div class="album py-5 bg-dark-grey">
+                    <div class="container">
+
+                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-3">
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="img-thumbnail" src="/img/nutrition/fruits.jpg" alt="salad bowl">
+                                    <div class="card-body">
+                                        <p class="card-text text-dark-emphasis">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary">View</button>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary">Edit</button>
+                                            </div>
+                                            <small class="text-body-secondary">9 mins</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="img-thumbnail" src="/img/nutrition/salade.jpg" alt="salad bowl">
+                                    <div class="card-body">
+                                        <p class="card-text text-dark-emphasis">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary">View</button>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary">Edit</button>
+                                            </div>
+                                            <small class="text-body-secondary">9 mins</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="img-thumbnail" src="/img/nutrition/fruits.jpg" alt="salad bowl">
+                                    <div class="card-body">
+                                        <p class="card-text text-dark-emphasis">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary">View</button>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary">Edit</button>
+                                            </div>
+                                            <small class="text-body-secondary">9 mins</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <!-- Nutrition section Start -->
+
+    <!-- Pricing section start -->
+    <section class="pricing bg-dark-grey section-padding" id="tarifs">
+        <div class="p-wrapper">
+            <div class="container">
+                <div class="p-text">
+                    <div class="section-title">
+                        <span>Prix</span>
+                        <h2>Plan Tarifaire</h2>
+                        <p>
+                            Retrouvez tous les tarifs associe au programme souhaite.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-grid">
+                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                        <div class="col">
+                          <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                              <h4 class="my-0 fw-normal">Masse Musculaire</h4>
+                            </div>
+                            <div class="card-body">
+                              <h1 class="card-title pricing-card-title">15€<small class="text-body-secondary fw-light">/mois</small></h1>
+                              <ul class="list-unstyled mt-3 mb-4">
+                                <li>Lorem ipsum dolor sit.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                              </ul>
+                              <button type="button" class="w-100 btn btn-lg btn-outline-success">En savoir +</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3">
+                              <h4 class="my-0 fw-normal">Perte de Gras</h4>
+                            </div>
+                            <div class="card-body">
+                              <h1 class="card-title pricing-card-title">25€<small class="text-body-secondary fw-light">/mois</small></h1>
+                              <ul class="list-unstyled mt-3 mb-4">
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                              </ul>
+                              <button type="button" class="w-100 btn btn-lg btn-success">Choisir</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card mb-4 rounded-3 shadow-sm border-success">
+                            <div class="card-header py-3 text-bg-success border-success">
+                              <h4 class="my-0 fw-normal">Entrainement + Nutrition</h4>
+                            </div>
+                            <div class="card-body">
+                              <h1 class="card-title pricing-card-title">30€<small class="text-body-secondary fw-light">/mois</small></h1>
+                              <ul class="list-unstyled mt-3 mb-4">
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                              </ul>
+                              <button type="button" class="w-100 btn btn-lg btn-success">Choisir</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing section start -->
+
+    <!-- contact section -->
+    <section class="contact bg-dark section-padding" id="contact">
+        <div class="cs-wrapper">
+            <div class="container">
+                <div class="section-title">
+                    <span>Contact</span>
+                    <h2>Faites le premier pas</h2>
+                    <p>
+                        Soumettez votre demande d'adhesion ou de renseignements en remplissant le formulaire
+                    </p>
+                </div>
+
+                <div class="cf-form">
+                    <form action="admin.php" method="post">
+                        <div class="mb-3">
+                            <div class="row">
+
+                                <div class="col-12 mb-3 col-lg-4">
+                                    <input type="text" name="nom" id="nom" placeholder="Nom Complet" class="form-control">
+                                </div>
+                                <div class="col-12 mb-3 col-lg-4">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Choisir Genre</option>
+                                        <option value="homme">Homme</option>
+                                        <option value="femme">Femme</option>
+                                        <option value="ng">Non Genre</option>
+                                      </select>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Tranche d'age</option>
+                                        <option value="homme">18 - 24 ans</option>
+                                        <option value="femme">25 - 32 ans</option>
+                                        <option value="ng">33 - 45 ans</option>
+                                        <option value="ng"> +45 ans</option>
+                                      </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="row">
+                                <div class="col-12 mb-3 col-lg-6">
+                                    <input type="tel" name="phone" id="phone" placeholder="Votre numero de telephone" class="form-control">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <input type="email" name="email" id="email" placeholder="Votre adresse mail" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit">
+                            <input class="btn btn-success" type="submit" value="Confirmez">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section -->
+
+    <!-- footer -->
+    <footer class="py-3 bg-dark">
+        <div class="container">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#training" class="nav-link px-2 text-white">Entrainement</a></li>
+          <li class="nav-item"><a href="#nutrition" class="nav-link px-2 text-white">Nutrition</a></li>
+          <li class="nav-item"><a href="#tarifs" class="nav-link px-2 text-white">Tarifs</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link px-2 text-white">Contact</a></li>
+        </ul>
+        <p class="text-center text-white">&copy; 2023 Company, Inc</p>
+        </div>
+      </footer>
+    <!-- footer -->
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+</html>

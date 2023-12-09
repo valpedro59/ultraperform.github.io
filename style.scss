@@ -1,0 +1,415 @@
+/******************************************************************
+  Website Name: Gym
+  Description:  Gym Fitness HTML Template
+  Author: Val Pedro
+  Author URI: https://valpedro.com
+  Version: 1.0
+  Created: Val Pedro
+******************************************************************/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.  Website default CSS
+	1.1	Variables
+	1.2	Mixins
+	1.3	Flexbox
+	1.4	Reset
+2.  Helper Css
+3.  Header Section
+4.  Hero Section
+5.  Service Section
+6.  Class Section
+7.  Price Plan Section
+8.  Trainer Section
+9.  Contact
+10.  Footer Style
+
+-------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/* 1-- Website default CSS
+/*---------------------------------------*/
+
+/*Root color*/ 
+
+$dark-color: #0a0a0a;
+$dark-grey-color: #151515;
+$light-color: #f1f5f8;
+$green-color: #008000;
+$grey-color: #F8F9FA;
+$white-color: #f1f1f1;
+
+$transition: all .3s;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-dark-grey {
+    background-color: $dark-grey-color;
+}
+
+body {
+    // background-color: $dark-grey-color !important;
+    font-family: 'Oswald';
+    scroll-behavior: smooth;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+p {
+	font-size: 14px;
+	font-family: "Muli", sans-serif;
+	color: #d9d9d9;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0 0 15px 0;
+}
+
+img {
+	max-width: 100%;
+}
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+	color: green;
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.btn-start {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 17px 30px 16px;
+    color: $white-color;
+    background: $green-color;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: $transition;
+
+    &:hover {
+            color: $green-color;
+            background-color: $white-color;
+        }
+}
+
+.section-padding {
+    padding: 100px 55px;
+}
+.section-title {
+    color: #f1f5f8;
+    text-align: center;
+    margin-bottom: 55px;
+
+    span {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: $green-color;
+    }
+}
+
+
+// general end
+
+/* 1-- Header
+/*----------------------------------------*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 25px;
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: center;
+    padding-top: 55px;
+    z-index: 99;
+    width: 100%;
+    // backdrop-filter: blur(10px);
+
+    .navbar-brand {
+        margin-top: -30px;
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+    }
+
+    nav {
+        ul {
+            // display: flex;
+            // gap: 16px;
+            
+            li {
+                a{
+                    color: $white-color !important;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    letter-spacing: 2px;
+
+                    &:hover {
+                        color: $green-color !important;
+                    }
+                }
+            }
+        }
+
+    }
+    .socials {
+        // display: flex;
+        // gap: 16px;
+        a {
+            color: $white-color;
+            &:hover {
+                color:$green-color;
+            }
+        }
+    }
+}
+// header end
+
+/*hero-section start*/
+.hero-section {
+    position: relative;
+    top: 0;
+    opacity: 1;
+    .hs-item {
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/hero.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+
+        .hi-text {
+            position: absolute;
+            top: 50%;
+            width: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            span {
+                color: $white-color;
+                display: block;
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 6px;
+                margin-bottom: 18px;
+                // position: relative;
+                // top: 100px;
+                // opacity: 0;
+            }
+            h1 {
+                color: $white-color;
+                font-size: 80px;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 90px;
+                margin-bottom: 42px;
+                // position: relative;
+                // top: 100px;
+                // opacity: 0;
+            }
+            // a {
+            //     display: inline-block;
+            //     font-size: 14px;
+            //     padding: 17px 30px 16px;
+            //     color: $white-color;
+            //     background: $green-color;
+            //     line-height: normal;
+            //     letter-spacing: 1px;
+            //     text-transform: uppercase;
+            //     font-weight: 700;
+            //     transition: $transition;
+
+            //     &:hover {
+            //         color: $green-color;
+            //         background-color: $white-color;
+            //     }
+            // }
+        }
+    }
+} 
+/*hero-section end*/
+
+
+/*why-section start*/ 
+
+.choseus-section {
+    .section-title {
+        text-align: center;
+        margin-bottom: 55px;
+
+        span {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: $green-color;
+        }
+    }
+
+    .plan-wrapper {
+        display: flex;
+        gap: 16px;
+
+        .cs-item {
+            color: #f1f5f8 !important;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+    img {
+        width: 54px;
+        height: 54px;
+    }
+}
+/*why-section end*/
+
+
+/*training-section start*/
+.training {
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 55px;
+    
+        span {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: $green-color;
+        }
+    }
+
+    .ts-grid {
+        width: 100%;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        // gap: 8px;
+        // grid-template-areas: 
+        // 'muscle mincir'
+        // 'seche endurance'
+        // 'deux deux';
+        .grid-item {
+            position: relative;
+            text-align: center;
+            color: $white-color;
+            transition: $transition;
+
+            h4 {
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+                opacity: 0;
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            &:hover h4 {
+                opacity: 1;
+            }
+        }
+
+        #muscle {
+            // grid-area: muscle;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        #mincir {
+            // grid-area: mincir;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        #seche {
+            // grid-area: seche;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        #endurance {
+            // grid-area: endurance;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        #deux {
+            // grid-area: deux;
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// footer {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+// }
+
+/*training-section end*/ 
+
+
+// Small screen
+
+@media screen and (max-width: 780px) {
+    header {
+        padding: 0;
+
+    } nav{
+        background-color: #151515;
+    }
+}
