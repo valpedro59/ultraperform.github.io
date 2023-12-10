@@ -306,11 +306,23 @@ header .socials a:hover {
 }
 
 /*training-section end*/
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 767px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .section-padding {
+    padding: 100px 25px;
+  }
   header {
     padding: 0;
+    width: 100%;
   }
   nav {
     background-color: #151515;
+  }
+  .hero-section .hs-item .hi-text h1 {
+    font-size: 38px;
+    line-height: normal;
   }
 }/*# sourceMappingURL=style.css.map */
